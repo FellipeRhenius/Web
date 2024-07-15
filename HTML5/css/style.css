@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(1, 72, 94);
+    color: white;
+    margin: 0;
+}
+h2,h1{
+    color: rgb(0, 255, 64);
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+}
+p{
+    text-align: justify;
+}
+header{
+    background-color:azure;
+    color:black;
+}
+main{
+    margin: auto 15%;
+}
+.destaque{
+    background-color: brown;
+    color:azure;
+    padding-left: 20px;
+}
+#img-logo{
+    width: 100px;
+}
+nav li{
+   display: inline;
+   margin-left: 20px;
+   color:rgb(160, 25, 52);
+   font-weight: bold;
+   border: 2px solid ;
+   padding: 5px;
+}
+nav{
+    float: right ;
+}
+footer{
+    background-color: azure;
+    color:black;
+}
