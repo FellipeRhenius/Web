@@ -45,19 +45,20 @@ Português:
 
 Atualizações realizadas no repositório web:
 
-Implementação de um novo estilo para as páginas.
-Criação de um arquivo JavaScript para organizar o código e funcionalidades.
-Desenvolvimento de uma função para os botões (ainda precisa de ajustes).
-Inclusão de novas informações nas páginas existentes.
-Criação de uma página dedicada a explicar práticas de programação.
-Adição de uma nova página para explicar conceitos de HTML.
+-Implementação de um novo estilo para as páginas.
+-Criação de um arquivo JavaScript para organizar o código e funcionalidades.
+-Desenvolvimento de uma função para os botões (ainda precisa de ajustes).
+-Inclusão de novas informações nas páginas existentes.
+-Criação de uma página dedicada a explicar práticas de programação.
+-Adição de uma nova página para explicar conceitos de HTML.
+
 Inglês:
 
 Updates made to the web repository:
 
-Implementation of a new style for the pages.
-Creation of a JavaScript file to organize code and functionalities.
-Development of a button function (still needs adjustments).
-Addition of new information to existing pages.
-Creation of a page dedicated to explaining programming practices.
-Addition of a new page explaining HTML concepts.
+-Implementation of a new style for the pages.
+-Creation of a JavaScript file to organize code and functionalities.
+-Development of a button function (still needs adjustments).
+-Addition of new information to existing pages.
+-Creation of a page dedicated to explaining programming practices.
+-Addition of a new page explaining HTML concepts.
