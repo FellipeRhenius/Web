@@ -52,7 +52,7 @@ Atualizações realizadas no repositório web:
 -Criação de uma página dedicada a explicar práticas de programação.
 -Adição de uma nova página para explicar conceitos de HTML.
 
-Inglês:
+English:
 
 Updates made to the web repository:
 
@@ -62,3 +62,21 @@ Updates made to the web repository:
 -Addition of new information to existing pages.
 -Creation of a page dedicated to explaining programming practices.
 -Addition of a new page explaining HTML concepts.
+
+##Update 30/08/2024
+
+Português:
+Atualizações realizadas no repositório web:
+
+Problema com redirecionamento de páginas corrigido.
+Criação de novas páginas.
+Botões vinculados e verificados.
+Teste de erros realizado.
+
+English:
+Updates made to the web repository:
+
+Fixed page redirection issue.
+Created new pages.
+Linked and verified buttons.
+Performed error testing.
