@@ -37,8 +37,7 @@ How to Run
 Clone the repository.
 Open the .html in a web browser.
 
-
-
+_________________________________________________________________________________________
 ##Update 23/08/2024
 
 Português:
@@ -63,6 +62,7 @@ Updates made to the web repository:
 -Creation of a page dedicated to explaining programming practices.
 -Addition of a new page explaining HTML concepts.
 
+_________________________________________________________________________________________
 ##Update 30/08/2024
 
 Português:
@@ -80,3 +80,28 @@ Fixed page redirection issue.
 Created new pages.
 Linked and verified buttons.
 Performed error testing.
+
+_________________________________________________________________________________________
+##Update 03/09/2024
+
+Added shopping cart page and a button to redirect to it. General improvements to buttons.
+
+Adicionado:
+
+-Nova página de carrinho de compras.
+-Novo botão para redirecionar para a página de carrinho de compras.
+
+Melhorias:
+
+-Melhorias gerais nos botões, incluindo ajustes de estilo e funcionalidade.
+
+English:
+
+Added:
+
+-New shopping cart page.
+-New button to redirect to the shopping cart page.
+
+Improvements:
+
+-General improvements to buttons, including style and functionality adjustments.
