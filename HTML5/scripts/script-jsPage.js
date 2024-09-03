@@ -4,6 +4,7 @@ function redirect(destination){
         htmlPage: "htmlPage.html",
         cssPage: "cssPage.html",
         logicPage: "logicPage.html",
+        shopPage: "shopPage.html"
     };
     
     if (routes[destination]){
@@ -24,4 +25,7 @@ document.getElementById("btnCss").addEventListener("click", function(){
 });
 document.getElementById("btnLogic").addEventListener("click", function(){
     redirect("logicPage");
+});
+document.getElementById("btnMarket").addEventListener("click", function(){
+    redirect("shopPage");
 });

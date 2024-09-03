@@ -3,7 +3,8 @@ function redirect(destination){
         firstPage: "firstPage.html",
         htmlPage: "htmlPage.html",
         cssPage: "cssPage.html",
-        jsPage: "jsPage.html"
+        jsPage: "jsPage.html",
+        shopPage: "shopPage.html"
     };
     
     if (routes[destination]){
@@ -24,4 +25,7 @@ document.getElementById("btnCss").addEventListener("click", function(){
 });
 document.getElementById("btnJs").addEventListener("click", function(){
     redirect("jsPage");
+});
+document.getElementById("btnMarket").addEventListener("click", function(){
+    redirect("shopPage");
 });
