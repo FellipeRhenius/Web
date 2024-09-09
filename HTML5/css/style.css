@@ -1,122 +1,32 @@
-body {
-    background-color: rgb(172, 172, 172);
-    color: rgb(255, 255, 255);
-    margin: 0;
+*{
+    font-family:Arial, Helvetica, sans-serif;
 }
-
-h3,
-h4 {
-    margin: 2%;
-}
-
-h2,
-h1 {
-    color: rgb(255, 255, 255);
+h1{
+    color: #f0f0f0;
+    padding: 30px;
     text-align: center;
 }
-
-h1 {
-    text-transform: uppercase;
+body{
+    background-color: #1f1f1f;
 }
-
-p.destaque {
-    text-align: justify;
-    margin: 0;
+.table-desc{
+    color:#cccccc;
 }
-
-p {
-    text-align: justify;
-    margin: 2%;
+.container{
+    background-color: #1f1f1f;
 }
-
-header {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+.descricao{
+    color:#cccccc;
 }
-
-main {
-    background-color: rgb(0, 0, 0);
-    margin: auto 10%;
+.product-info{
+    color: #f0f0f0;
+    font-weight:550;
 }
-
-#btnMarket {
-    background-color: #aa0404;
-    border-radius: 6px;
-    cursor: pointer;
+.product-num{
+    color: #f0f0f0;
 }
-
-
-nav button {
-    font-size: 16px;
-    padding: 10px 30px;
-    border-radius: 6px;
-    margin: 3px;
-    border: none;
-    cursor: pointer;
-    background-color: #aa0404;
-    border-color: #aa0404;
-    color: white;
+footer{
+    background-color:rgb(83, 83, 83);
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    transition-duration: 0.3s;
-}
-
-nav button:hover {
-    font-size: large;
-    background-color: #ffffff;
-    color: #aa0404;
-}
-
-#btnMarket {
-    height: 39px;
-    width: 80px;
-
-    background-image: url('../img/marketIcon_white.png');
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #aa0404;
-    vertical-align: middle;
-    transition-duration: 0.3s;
-}
-
-#btnMarket:hover {
-    height: 42px;
-    width: 83px;
-    background-color: #ffffff;
-    background-image: url('../img/marketIcon_red.png');
-    background-size: 50%;
-}
-
-.destaque {
-    background-color: rgb(216, 216, 216);
-    color: rgb(0, 0, 0);
-    padding-left: 20px;
-}
-
-#img-logo {
-    width: 150px;
-}
-
-#img-shopLogo {
-    width: 100px;
-}
-
-nav li {
-    display: inline;
-    margin-left: 20px;
-    color: rgb(160, 25, 52);
-    font-weight: bold;
-    border: 2px solid;
-    padding: 5px;
-}
-
-nav {
-    float: right;
-}
-
-footer {
-    background-color: rgb(255, 255, 255);
-    color: black;
+    padding: 10px;
 }
