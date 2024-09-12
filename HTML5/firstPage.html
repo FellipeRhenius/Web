@@ -1,149 +1,325 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8" />
-    <title>Práticas de Programação</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
 <body>
-    <header>
-        <img id="img-logo" src="img/code.jpeg" alt="Code jpeg" />
+    <!DOCTYPE html>
+    <html>
 
-        <nav>
-            <button id="btnHtml">HTML</button>
-            <button id="btnCss">CSS</button>
-            <button id="btnLogic">Lógica de Programação</button>
-            <button id="btnJs">Java Script</button>
-            <button id="btnMarket"></button>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Práticas de Programação</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body data-bs-theme="dark">
+        <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html"><i class="bi bi-shop"></i> WebSite</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="frontEndPage.html">FrontEnd</a></li>
+                                <li><a class="dropdown-item disabled" aria-disabled="true">Práticas de Programação</a>
+                                </li>
+                                <li><a class="dropdown-item" href="logicPage.html">Lógica de Programação</a></li>
+                                <li><a class="dropdown-item" href="htmlPage.html">HTML5</a></li>
+                                <li><a class="dropdown-item" href="cssPage.html">CSS</a></li>
+                                <li><a class="dropdown-item" href="jsPage.html">Java Script</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Suporte</a></li>
+                                <li><a class="dropdown-item" href="#">Quem somos</a></li>
+                                <li><a class="dropdown-item" href="#">Trabalhe Conosco</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Ofertas</a>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><i
+                                        class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </ul>
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="bi bi-person-fill"></i></button>
         </nav>
-    </header>
 
-    <main>
-        <p class="destaque">Bem vindos ao site de Práticas de Programação</p>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Fellipe Duarte</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
 
-        <h1>Práticas de Programação</h1>
-        <p>
-            A prática de programação envolve o exercício contínuo e disciplinado de escrever, testar, refatorar e
-            melhorar código para resolver problemas de forma eficiente e organizada. Ela vai além de apenas "escrever
-            código", englobando uma série de técnicas, princípios e habilidades que ajudam a criar software de alta
-            qualidade, fácil de manter e escalável.
-        </p>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <i class="bi bi-person-square"> Profile</i>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#"><i class="bi bi-person-fill"></i> Meu
+                                        Perfil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-person-lines-fill"></i>
+                                        Dados
+                                        Pessoais</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-key-fill"></i> Alterar
+                                        Senha</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-fire"></i> Meus
+                                        Cursos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="shopPage.html"><i class="bi bi-cart4"></i> Meu
+                                        carrinho</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <i class="bi bi-gear-fill"> Configurações</i>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-alphabet-uppercase"></i>
+                                        Idioma</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-moon-fill"></i> Modo
+                                        Noturno</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <i class="bi bi-filter-circle-fill"> Outros</i>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#"><i class="bi bi-person-fill-up"></i>
+                                        Alterar Conta</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#"><i class="bi bi-box-arrow-left"></i>
+                                        Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h2> Aspectos da Prática de Programação</h2>
+        <div class="container">
+            <main>
+                <h1>Práticas de Programação</h1>
+                <p>
+                    A prática de programação envolve o exercício contínuo e disciplinado de escrever, testar, refatorar
+                    e
+                    melhorar código para resolver problemas de forma eficiente e organizada. Ela vai além de apenas
+                    "escrever
+                    código", englobando uma série de técnicas, princípios e habilidades que ajudam a criar software de
+                    alta
+                    qualidade, fácil de manter e escalável.
+                </p>
 
-        <h3>Boas Práticas de Código:</h3>
-        <p>
-            Boas práticas de código se referem a padrões e convenções que tornam o código mais legível, organizado e
-            fácil de entender. Alguns exemplos incluem:
-        </p>
+                <h2> Aspectos da Prática de Programação</h2>
 
-        <h4>Nomeação clara de variáveis e funções:</h4>
-        <p>
-            Usar nomes descritivos, como calcularSalarioMensal() em vez de calc().
-        </p>
+                <h3>Boas Práticas de Código:</h3>
+                <p>
+                    Boas práticas de código se referem a padrões e convenções que tornam o código mais legível,
+                    organizado e
+                    fácil de entender. Alguns exemplos incluem:
+                </p>
 
-        <h4>Indentação e espaçamento:</h4>
-        <p>
-            Manter o código bem formatado, com recuos consistentes.
-        </p>
+                <h4>Nomeação clara de variáveis e funções:</h4>
+                <p>
+                    Usar nomes descritivos, como calcularSalarioMensal() em vez de calc().
+                </p>
 
-        <h4>Modularidade:</h4>
-        <p>
-            Dividir o código em partes menores (funções, classes, módulos) para facilitar a leitura e manutenção.
-        </p>
+                <h4>Indentação e espaçamento:</h4>
+                <p>
+                    Manter o código bem formatado, com recuos consistentes.
+                </p>
 
-        <h4>Versionamento de Código (Git):</h4>
-        <p>
-            Controlar versões do código usando ferramentas como Git permite que programadores acompanhem mudanças,
-            revertam para versões anteriores e colaborem com outras pessoas de forma eficiente.
-        </p>
+                <h4>Modularidade:</h4>
+                <p>
+                    Dividir o código em partes menores (funções, classes, módulos) para facilitar a leitura e
+                    manutenção.
+                </p>
 
-        <h4>Testes de Software:</h4>
-        <p>
-            Testes automatizados (unitários, de integração, etc.) são uma prática essencial para garantir que o código
-            funcione conforme esperado e que novas mudanças não introduzam bugs.
-        </p>
+                <h4>Versionamento de Código (Git):</h4>
+                <p>
+                    Controlar versões do código usando ferramentas como Git permite que programadores acompanhem
+                    mudanças,
+                    revertam para versões anteriores e colaborem com outras pessoas de forma eficiente.
+                </p>
 
-        <h4>Refatoração:</h4>
-        <p>
-            Refatorar é o processo de melhorar a estrutura do código sem alterar seu comportamento externo. Isso inclui
-            simplificar lógica, remover duplicação de código e melhorar a legibilidade.
-        </p>
+                <h4>Testes de Software:</h4>
+                <p>
+                    Testes automatizados (unitários, de integração, etc.) são uma prática essencial para garantir que o
+                    código
+                    funcione conforme esperado e que novas mudanças não introduzam bugs.
+                </p>
 
-        <h4>Princípios de Programação (ex.: SOLID, DRY, KISS):</h4>
-        <p>
-            Seguir princípios estabelecidos ajuda a criar software que seja sustentável a longo prazo:
-        </p>
+                <h4>Refatoração:</h4>
+                <p>
+                    Refatorar é o processo de melhorar a estrutura do código sem alterar seu comportamento externo. Isso
+                    inclui
+                    simplificar lógica, remover duplicação de código e melhorar a legibilidade.
+                </p>
 
-        <p>
-            <strong>SOLID:</strong> Um conjunto de cinco princípios que guiam o design orientado a objetos.
-        </p>
-        <p>
-            <strong>DRY(Don’t Repeat Yourself):</strong> Evitar duplicação de código.
-        </p>
-        <p>
-            <strong>KISS (Keep It Simple, Stupid):</strong> Manter o código o mais simples possível.
-        </p>
+                <h4>Princípios de Programação (ex.: SOLID, DRY, KISS):</h4>
+                <p>
+                    Seguir princípios estabelecidos ajuda a criar software que seja sustentável a longo prazo:
+                </p>
 
-        <h4>Documentação:</h4>
-        <p>
-            Documentar o código, seja com comentários ou documentação externa, é importante para que outros
-            desenvolvedores (ou você mesmo no futuro) entendam como o sistema funciona.
-        </p>
+                <p>
+                    <strong>SOLID:</strong> Um conjunto de cinco princípios que guiam o design orientado a objetos.
+                </p>
+                <p>
+                    <strong>DRY(Don’t Repeat Yourself):</strong> Evitar duplicação de código.
+                </p>
+                <p>
+                    <strong>KISS (Keep It Simple, Stupid):</strong> Manter o código o mais simples possível.
+                </p>
 
-        <h3>Utilidades da Prática de Programação</h3>
+                <h4>Documentação:</h4>
+                <p>
+                    Documentar o código, seja com comentários ou documentação externa, é importante para que outros
+                    desenvolvedores (ou você mesmo no futuro) entendam como o sistema funciona.
+                </p>
 
-        <h4>Manutenção Facilitada:</h4>
-        <p>
-            Um código bem estruturado e com boas práticas é mais fácil de entender e ajustar. Isso reduz o tempo
-            necessário para corrigir bugs e implementar novas funcionalidades.
-        </p>
+                <h3>Utilidades da Prática de Programação</h3>
 
-        <h4>Escalabilidade:</h4>
-        <p>
-            Práticas de programação ajudam a criar sistemas que podem crescer em complexidade e tamanho sem perder
-            qualidade ou se tornar difíceis de gerenciar.
-        </p>
+                <h4>Manutenção Facilitada:</h4>
+                <p>
+                    Um código bem estruturado e com boas práticas é mais fácil de entender e ajustar. Isso reduz o tempo
+                    necessário para corrigir bugs e implementar novas funcionalidades.
+                </p>
 
-        <h4>Colaboração:</h4>
-        <p>
-            Em equipes, seguir boas práticas e padrões facilita a colaboração, pois todos têm um entendimento comum do
-            estilo e da estrutura do código.
-        </p>
+                <h4>Escalabilidade:</h4>
+                <p>
+                    Práticas de programação ajudam a criar sistemas que podem crescer em complexidade e tamanho sem
+                    perder
+                    qualidade ou se tornar difíceis de gerenciar.
+                </p>
 
-        <h4> Segurança e Confiabilidade:</h4>
-        <p>
-            Práticas como testes e controle de versões aumentam a segurança do código, minimizando a ocorrência de erros
-            em produção e facilitando a recuperação de falhas.
-        </p>
+                <h4>Colaboração:</h4>
+                <p>
+                    Em equipes, seguir boas práticas e padrões facilita a colaboração, pois todos têm um entendimento
+                    comum do
+                    estilo e da estrutura do código.
+                </p>
 
-        <h4>Produtividade a Longo Prazo:</h4>
-        <p>
-            Mesmo que pareça que seguir essas práticas exige mais tempo inicialmente, elas aumentam a produtividade a
-            longo prazo, já que evitam retrabalho e problemas causados por código mal escrito.
-        </p>
+                <h4> Segurança e Confiabilidade:</h4>
+                <p>
+                    Práticas como testes e controle de versões aumentam a segurança do código, minimizando a ocorrência
+                    de erros
+                    em produção e facilitando a recuperação de falhas.
+                </p>
 
-        <h2>Conclusão</h2>
-        <p>
-            Prática de programação vai muito além de apenas escrever código que funciona. Ela envolve aplicar
-            princípios, técnicas e padrões que tornam o desenvolvimento de software mais eficiente, sustentável e
-            colaborativo. Esses elementos formam a base para qualquer desenvolvedor que deseja criar sistemas de
-            qualidade e crescer na carreira.
-        </p>
+                <h4>Produtividade a Longo Prazo:</h4>
+                <p>
+                    Mesmo que pareça que seguir essas práticas exige mais tempo inicialmente, elas aumentam a
+                    produtividade a
+                    longo prazo, já que evitam retrabalho e problemas causados por código mal escrito.
+                </p>
 
-        <h2>Mais informações Abaixo</h2>
-        <p class="final">
-            Clique <a target="_blank" href="https://www.sydle.com/br/blog/clean-code-602bef23da4d09680935509b"> aqui</a>
-        </p>
-    </main>
-    <footer>
-        <p>Todos os Direitos Reservados</p>
-    </footer>
-    <script src="scripts/script-firstPage.js"></script>
-</body>
+                <h2>Conclusão</h2>
+                <p>
+                    Prática de programação vai muito além de apenas escrever código que funciona. Ela envolve aplicar
+                    princípios, técnicas e padrões que tornam o desenvolvimento de software mais eficiente, sustentável
+                    e
+                    colaborativo. Esses elementos formam a base para qualquer desenvolvedor que deseja criar sistemas de
+                    qualidade e crescer na carreira.
+                </p>
+                <h2>Mais informações Abaixo</h2>
+                <p class="final">
+                    Clique <a target="_blank" href="https://www.sydle.com/br/blog/clean-code-602bef23da4d09680935509b">
+                        aqui</a>
+                </p>
+            </main>
 
-</html>
+            <h2>Outros Cursos</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/shoppingImages/javaSql.jpg" class="card-img-top" alt="javaSQL.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Java e SQL</h5>
+                            <p class="card-text">Aprenda java do básico ao avançado, com a implementação de banco de
+                                dados
+                                SQL</p>
+                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer>
+            <p>Todos os Direitos Reservados</p>
+        </footer>
+
+        <script src="scripts/bootstrap.bundle.js"></script>
+        <script src="scripts/script-firstPage.js"></script>
+    </body>
+
+    </html>

@@ -3,91 +3,257 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>HTML 5</title>
+    <title>HTML5</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-<body>
-    <header>
-        <img id="img-logo" src="img/html.png" alt="Logo HTML" />
+<body data-bs-theme="dark">
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 
-        <nav>
-            <button id="btnFirst">Práticas de Programação</button>
-            <button id="btnCss">CSS</button>
-            <button id="btnLogic">Lógica de Programação</button>
-            <button id="btnJs">Java Script</button>
-            <button id="btnMarket"></button>
-        </nav>
-    </header>
+        <div class="container-fluid">
 
-    <main>
-        <p class="destaque">HTML oque é e onde é utilizado?</p>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-shop"></i> WebSite</a>
 
-        <h1>HTML 5</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <h2>HTML (Hypertext Markup Language)</h2>
-        <p>É a linguagem de marcação usada para criar e estruturar o conteúdo na web. Ele define a estrutura básica de
-            uma página web, como textos, imagens, links e outros elementos. HTML organiza o conteúdo em uma hierarquia
-            usando tags que ajudam a determinar como o conteúdo é exibido pelos navegadores. É essencial para a
-            construção de sites e aplicações web, fornecendo a fundação sobre a qual outros recursos, como CSS e
-            JavaScript, são aplicados para criar páginas interativas e estilizadas.</p>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <h2>Principais Características do HTML:</h2>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="frontEndPage.html">FrontEnd</a></li>
+                            <li><a class="dropdown-item" href="firstPage.html">Práticas de Programação</a>
+                            </li>
+                            <li><a class="dropdown-item" href="logicPage.html">Lógica de Programação</a></li>
+                            <li><a class="dropdown-item disabled" aria-disabled="true">HTML5</a></li>
+                            <li><a class="dropdown-item" href="cssPage.html">CSS</a></li>
+                            <li><a class="dropdown-item" href="jsPage.html">Java Script</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Info
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Suporte</a></li>
+                            <li><a class="dropdown-item" href="#">Quem somos</a></li>
+                            <li><a class="dropdown-item" href="#">Trabalhe Conosco</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Ofertas</a>
+                    </li>
+                </ul>
+                <ul class="nav">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </ul>
 
-        <h3>1.Estrutura de Documentos:</h3>
-        <p>HTML organiza o conteúdo em uma estrutura hierárquica usando elementos e tags. Esses elementos definem
-            diferentes partes do documento, como cabeçalhos, parágrafos, listas e links.</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                        class="bi bi-person-fill"></i></button>
+    </nav>
 
-        <h3>2.Tags e Atributos:</h3>
-        <p><strong>Tags:</strong> São os componentes básicos de HTML. Por exemplo, "p" define um parágrafo e "a" define
-            um link.</p>
-        <p><strong>Atributos:</strong> Adicionam informações adicionais sobre um elemento. Por exemplo, href no "a"
-            define o URL do link.</p>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Fellipe Duarte</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
 
-        <h3>3.Semântica:</h3>
-        <p>HTML5 introduziu tags semânticas que fornecem significado ao conteúdo, como "header", "footer", "article", e
-            "section". Essas tags ajudam na organização do conteúdo e melhoram a acessibilidade.</p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <i class="bi bi-person-square"> Profile</i>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="#"><i class="bi bi-person-fill"></i> Meu
+                                    Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-person-lines-fill"></i>
+                                    Dados
+                                    Pessoais</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-key-fill"></i> Alterar
+                                    Senha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-fire"></i> Meus
+                                    Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="shopPage.html"><i class="bi bi-cart4"></i> Meu
+                                    carrinho</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        <i class="bi bi-gear-fill"> Configurações</i>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-alphabet-uppercase"></i>
+                                    Idioma</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-moon-fill"></i> Modo
+                                    Noturno</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        <i class="bi bi-filter-circle-fill"> Outros</i>
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul class="nav flex-column ">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" href="#"><i class="bi bi-person-fill-up"></i>
+                                    Alterar Conta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#"><i class="bi bi-box-arrow-left"></i>
+                                    Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h3>4.Document Object Model (DOM):</h3>
-        <p>HTML é a base para o DOM, que é uma representação programática da estrutura da página. Isso permite que
-            JavaScript acesse e manipule o conteúdo da página.</p>
+    <div class="container">
+        <main>
+            <h1>HTML 5</h1>
+            <h2>HTML (Hypertext Markup Language)</h2>
+            <p>É a linguagem de marcação usada para criar e estruturar o conteúdo na web. Ele define a estrutura básica
+                de
+                uma página web, como textos, imagens, links e outros elementos. HTML organiza o conteúdo em uma
+                hierarquia
+                usando tags que ajudam a determinar como o conteúdo é exibido pelos navegadores. É essencial para a
+                construção de sites e aplicações web, fornecendo a fundação sobre a qual outros recursos, como CSS e
+                JavaScript, são aplicados para criar páginas interativas e estilizadas.</p>
 
-        <h2>Onde HTML é Utilizado:</h2>
+            <h2>Principais Características do HTML:</h2>
 
-        <h3>1.Desenvolvimento Web:</h3>
-        <p>HTML é a linguagem fundamental usada para criar e estruturar sites e aplicações web. É a primeira camada na
-            construção de qualquer página web, fornecendo a estrutura básica.</p>
+            <h3>1.Estrutura de Documentos:</h3>
+            <p>HTML organiza o conteúdo em uma estrutura hierárquica usando elementos e tags. Esses elementos definem
+                diferentes partes do documento, como cabeçalhos, parágrafos, listas e links.</p>
 
-        <h3>2.E-mails HTML</h3>
-        <p>HTML é usado para criar e-mails com formatação rica e layouts personalizados.</p>
+            <h3>2.Tags e Atributos:</h3>
+            <p><strong>Tags:</strong> São os componentes básicos de HTML. Por exemplo, "p" define um parágrafo e "a"
+                define
+                um link.</p>
+            <p><strong>Atributos:</strong> Adicionam informações adicionais sobre um elemento. Por exemplo, href no "a"
+                define o URL do link.</p>
 
-        <h3>3.Documentos e Relatórios:</h3>
-        <p>HTML pode ser utilizado para gerar documentos e relatórios formatados, acessíveis através de navegadores.</p>
+            <h3>3.Semântica:</h3>
+            <p>HTML5 introduziu tags semânticas que fornecem significado ao conteúdo, como "header", "footer",
+                "article", e
+                "section". Essas tags ajudam na organização do conteúdo e melhoram a acessibilidade.</p>
 
-        <h3>4.Aplicações Web</h3>
-        <p>HTML é frequentemente utilizado em conjunto com CSS e JavaScript para construir aplicações web interativas e
-            dinâmicas.</p>
+            <h3>4.Document Object Model (DOM):</h3>
+            <p>HTML é a base para o DOM, que é uma representação programática da estrutura da página. Isso permite que
+                JavaScript acesse e manipule o conteúdo da página.</p>
 
-        <h3>5.SEO e Acessibilidade:</h3>
-        <p>A semântica e a estrutura HTML ajudam motores de busca a indexar páginas e melhoram a acessibilidade para
-            leitores de tela e outras tecnologias assistivas.</p>
+            <h2>Onde HTML é Utilizado:</h2>
 
-        <h2>Conclusão</h2>
-        <p>HTML é uma linguagem de marcação essencial para qualquer desenvolvedor web. Ele fornece a estrutura e o
-            esqueleto de páginas e aplicações web, que são então estilizados com CSS e enriquecidos com JavaScript. Sem
-            HTML, a web como conhecemos não existiria.</p>
+            <h3>1.Desenvolvimento Web:</h3>
+            <p>HTML é a linguagem fundamental usada para criar e estruturar sites e aplicações web. É a primeira camada
+                na
+                construção de qualquer página web, fornecendo a estrutura básica.</p>
 
-        <h2>Mais informações Abaixo</h2>
-        <p class="final">
-            Clique <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> aqui</a>
-        </p>
-    </main>
+            <h3>2.E-mails HTML</h3>
+            <p>HTML é usado para criar e-mails com formatação rica e layouts personalizados.</p>
+
+            <h3>3.Documentos e Relatórios:</h3>
+            <p>HTML pode ser utilizado para gerar documentos e relatórios formatados, acessíveis através de navegadores.
+            </p>
+
+            <h3>4.Aplicações Web</h3>
+            <p>HTML é frequentemente utilizado em conjunto com CSS e JavaScript para construir aplicações web
+                interativas e
+                dinâmicas.</p>
+
+            <h3>5.SEO e Acessibilidade:</h3>
+            <p>A semântica e a estrutura HTML ajudam motores de busca a indexar páginas e melhoram a acessibilidade para
+                leitores de tela e outras tecnologias assistivas.</p>
+
+            <h2>Conclusão</h2>
+            <p>HTML é uma linguagem de marcação essencial para qualquer desenvolvedor web. Ele fornece a estrutura e o
+                esqueleto de páginas e aplicações web, que são então estilizados com CSS e enriquecidos com JavaScript.
+                Sem
+                HTML, a web como conhecemos não existiria.</p>
+
+            <h2>Mais informações Abaixo</h2>
+            <p class="final">
+                Clique <a target="_blank" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> aqui</a>
+            </p>
+        </main>
+        <h2>Outros Cursos</h2>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/shoppingImages/javaSql.jpg" class="card-img-top" alt="javaSQL.jpeg">
+                    <div class="card-body">
+                        <h5 class="card-title">Java e SQL</h5>
+                        <p class="card-text">Aprenda java do básico ao avançado, com a implementação de banco de
+                            dados
+                            SQL</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>Todos os Direitos Reservados</p>
     </footer>
+
+    <script src="scripts/bootstrap.bundle.js"></script>
     <script src="scripts/script-html.js"></script>
+</body>
 </body>
 
 </html>
